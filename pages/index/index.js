@@ -19,6 +19,15 @@ Page({
   onLoad: function () {
     that = this;
     console.log('Welcome to Mini Code')
+    //追加分享功能
+    tt.showShareMenu({
+      success(res) {
+        console.log(`showShareMenu 调用成功`);
+      },
+      fail(res) {
+        console.log(`showShareMenu 调用失败`);
+      },
+    });
   },
 
   //改变四个值的选择后
@@ -26,6 +35,8 @@ Page({
     console.log("picker发送选择改变，携带值为", e);
     this.setData({
       ["index_" + e.target.dataset.value]: e.detail.value,
+      result_info: '',
+      array_result: [],
     });
   },
   //开始计算
@@ -37,9 +48,9 @@ Page({
       that.data.array[that.data.index_3],
       that.data.array[that.data.index_4],
     ];
-    var arrLine = that.perm(index_value_arr); 
+    var arrLine = that.perm(index_value_arr);
     for (var i = 0; i < arrLine.length; i++) {
-      var result = that.getResult(arrLine[i][0], arrLine[i][1], arrLine[i][2], arrLine[i][3]) 
+      var result = that.getResult(arrLine[i][0], arrLine[i][1], arrLine[i][2], arrLine[i][3])
       for (var j = 0; j < result.length; j++) {
         resultStr.push(result[j]);
       }
@@ -71,6 +82,7 @@ Page({
       array_result: [],
     })
   },
+
   //====================计算逻辑
   operate: function (f, m, n) {
     //简单的计算函数，正常情况返回计算结果，异常情况返回 NaN

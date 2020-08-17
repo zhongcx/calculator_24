@@ -26,12 +26,11 @@
 				</view>
 			</picker>
 		</view>
-
 		<!--操作块-->
 		<view class="content_up_1">
 			<view class="calculation_submit" bindtap="bindSubmit">计算</view>
 			<view class="calculation_random" bindtap="bindRandom">随机</view>
-			<view class="calculation_clear" bindtap="bindClear">清空</view>
+			<!-- <view class="calculation_clear" bindtap="bindClear">清空</view> -->
 		</view>
 		<!--显示共有几种结果-->
 		<view class="calculation_info">{{result_info}}</view>

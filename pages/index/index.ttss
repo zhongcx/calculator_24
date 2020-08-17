@@ -22,15 +22,15 @@ page {
   flex-direction: row; /*orientation 排版 column:垂直 row:水平*/
  align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .content_down{
   
 }
 
-
-.calculation{
-  width: 155rpx;
+.calculation{  
+  width: 158rpx;
   height: 80rpx;
   border-radius:8rpx;
   margin-left: 22rpx;
@@ -42,7 +42,7 @@ page {
   width: 155rpx;
   height: 80rpx;
   border-radius:8rpx;
-  margin-left: 120rpx; 
+  margin-left: 213rpx; 
   background: rgba(18,124,252,1); 
   color:#ffffff;
   text-align: center;
