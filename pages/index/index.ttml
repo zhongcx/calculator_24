@@ -1,0 +1,48 @@
+<view class="content">
+	<!--分隔块-->
+	<view class="line_block"></view>
+	<!--计算块-->
+	<view class="content_up">
+		<!--显示块-->
+		<view class="content_up_1">
+			<picker class="calculation" value="{{index_1}}" range="{{array}}" data-value="1" bindchange="bindPickerChange" bindcancel="bindPickerCancel">
+				<view class="picker">
+					{{array[index_1]}}
+				</view>
+			</picker>
+			<picker class="calculation" value="{{index_2}}" range="{{array}}" data-value="2" bindchange="bindPickerChange" bindcancel="bindPickerCancel">
+				<view class="picker">
+					{{array[index_2]}}
+				</view>
+			</picker>
+			<picker class="calculation" value="{{index_3}}" range="{{array}}" data-value="3" bindchange="bindPickerChange" bindcancel="bindPickerCancel">
+				<view class="picker">
+					{{array[index_3]}}
+				</view>
+			</picker>
+			<picker class="calculation" value="{{index_4}}" range="{{array}}" data-value="4" bindchange="bindPickerChange" bindcancel="bindPickerCancel">
+				<view class="picker">
+					{{array[index_4]}}
+				</view>
+			</picker>
+		</view>
+
+		<!--操作块-->
+		<view class="content_up_1">
+			<view class="calculation_submit" bindtap="bindSubmit">计算</view>
+			<view class="calculation_random" bindtap="bindRandom">随机</view>
+			<view class="calculation_clear" bindtap="bindClear">清空</view>
+		</view>
+		<!--显示共有几种结果-->
+		<view class="calculation_info">{{result_info}}</view>
+	</view>
+	<!--分隔块-->
+	<view class="line_block"></view>
+	<!--结果块-->
+	<view class="content_down">
+		<view tt:for="{{array_result}}">
+			<view class="text">{{item}}</view>
+			<view class="line"></view>
+		</view>
+	</view>
+</view>
