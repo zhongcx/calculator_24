@@ -1,6 +1,4 @@
-# calculator_24
-抖音小程序，24点计算器源码
-
+#### 24点计算器 
 ![最终效果图](https://upload-images.jianshu.io/upload_images/11217637-07de6f97eed38662.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
@@ -25,8 +23,5 @@ github源码：
 第三方文档（官方文档不全，如tt:for都搜不出来，建议去第三方文档，或者参考微信小程序文档）：
 [https://www.w3cschool.cn/microapp/microapp-b7dv33kn.html](https://www.w3cschool.cn/microapp/microapp-b7dv33kn.html)
 
-注意事项
+#### 注意事项
 1、需要小程序名称和主体信息认证才能提审核<br/>2、我是早上9点开始提交各种审核的，除了小程序名称，其它的都当天过审。<br/>3、他这个开发工具没有微信好用。如果同时修改了多个文件，如果按Ctrl+S保存，只能保存其中一个，另一个不会保存。会影响预览<br/>4、相比微信小程序有个好处，生成的测试二维码可直接发给陌生用户测试，不需要像微信那样在后台添加审核人员。
-
-
-
